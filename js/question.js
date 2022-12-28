@@ -3,14 +3,21 @@ window.onload = () => {
     const black_cover = document.getElementById('modal-overlay');
     const message = document.getElementById('modal-content');
     const error_alert = document.getElementById('alert');
+    const text_crypto = document.getElementById('modal-content-text-crypto');
     const text = document.getElementById('modal-content-text');
     const password = document.getElementById('password');
 
     submit.addEventListener('click', () => {
         try{
-            text.textContent = crypto(text.textContent, document.getElementById('password').value);
-            black_cover.style.display = 'block';
-            message.style.display = 'block';
+            const base = crypto(text_crypto.textContent, password.value);
+            if(base!=""){
+                text.innerText = base;
+                black_cover.style.display = 'block';
+                message.style.display = 'block';
+                error_alert.style.display = 'none';
+            }else{
+                error_alert.style.display = 'block';
+            }
         } catch(error) {
             error_alert.style.display = 'block';
         }
@@ -18,6 +25,7 @@ window.onload = () => {
     black_cover.addEventListener('click', () => {
         black_cover.style.display = 'none';
         message.style.display = 'none';
+        text.innerText = "";
     });
 }
 

@@ -1,0 +1,158 @@
+.column{
+    height: 100vh;
+    width: 100%;
+}
+#title{
+    margin-left: 35px;
+}
+.left{
+    background: #fff;
+}
+.right{
+    background: #382424;
+    text-align: center;
+}
+h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(50px, 5vw, 70px);
+    margin: 120px 0 0;
+    color: #fff;
+}
+svg{
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    overflow: visible;
+}
+.foreground{
+    fill: #fff;
+}
+.background{
+    stroke: #000;
+    stroke-width: 4;
+    stroke-linejoin: round;
+}
+#service-info{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: clamp(37px, 4vw, 42px);
+    font-weight:bold;
+    color: #fff;
+    -webkit-text-stroke: 1.5px #E1D8D8;
+    margin: 0;
+}
+.outer{
+    display: table;
+}
+.inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#main-logo {
+    width: 45%;
+    height: auto;
+}
+
+.btn {
+    margin-top: 10vh;
+}
+.btn-inner{
+    width: 220px;
+    height: 45px;
+    margin: 10px auto;
+    padding-top: 15px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    border: #382424 solid 2px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+/* モバイル対応 */
+@media all and (min-width: 700px) {
+    .wrapper{
+        display: flex;
+    }
+}
+@media all and (max-height: 640px) {
+    h1{
+        margin-top: 30px;
+    }
+    .wrapper{
+        width: 100%;
+        height: 110vh;
+    }
+    .column{
+        width: 100%;
+        height: 110vh;
+    }
+}
+@media all and (max-height: 520px) {
+    .wrapper{
+        width: 100%;
+        height: 130vh;
+    }
+    .column{
+        width: 100%;
+        height: 130vh;
+    }
+}
+@media all and (max-height: 410px) {
+    .wrapper{
+        width: 100%;
+        height: 140vh;
+    }
+    .column{
+        width: 100%;
+        height: 140vh;
+    }
+}
+@media all and (max-height: 382px) {
+    .wrapper{
+        width: 100%;
+        height: 170vh;
+    }
+    .column{
+        width: 100%;
+        height: 170vh;
+    }
+}
+@media all and (max-height: 300px) {
+    .wrapper{
+        width: 100%;
+        height: 190vh;
+    }
+    .column{
+        width: 100%;
+        height: 190vh;
+    }
+}
+@media all and (max-height: 265px) {
+    .wrapper{
+        width: 100%;
+        height: 210vh;
+    }
+    .column{
+        width: 100%;
+        height: 210vh;
+    }
+}
+@media all and (max-height: 240px) {
+    .wrapper{
+        width: 100%;
+        height: 230vh;
+    }
+    .column{
+        width: 100%;
+        height: 230vh;
+    }
+}
+@media all and (max-height: 220px) {
+    .wrapper{
+        width: 100%;
+        height: 250vh;
+    }
+    .column{
+        width: 100%;
+        height: 250vh;
+    }
+}

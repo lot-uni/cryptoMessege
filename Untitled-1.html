@@ -1,0 +1,18 @@
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+https://code.google.com/archive/p/crypto-js/
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
+
+<label for="encypt-text">暗号化するテキスト：</label><br />
+<input id="encypt-text" class="text-string" type="text" size="80" value="おもしろき　こともなき世を　おもしろく　すみなしものは　心なりけり" /><br />
+<label for="encrypt-password">暗号化パスワード：</label><br />
+<input id="encrypt-password" class="passphrase" type="text" size="80" value="開け胡麻" /><br />
+&nbsp;&nbsp;↓<input id="encrypt" type="button" value="暗号化する" /><br />
+<label for="encypted-data">暗号化データ：</label><br />
+<textarea id="encypted-data" class="text-string" rows="8" cols="80"></textarea><br />
+<label for="decrypt-password">復号パスワード：</label><br />
+<input id="decrypt-password" class="passphrase" type="text" size="80" value="開け胡麻" /><br />
+&nbsp;&nbsp;↓<input id="decrypt" type="button" value="復号する" /><br />
+<label for="decrypt-text">復号されたテキスト：</label><br />
+<textarea id="decrypt-text" class="text-string" rows="4" cols="80"></textarea>
+

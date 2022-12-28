@@ -1,0 +1,94 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif; 
+    color: #fff;
+}
+#header {
+    width: 100%;
+    height: 90px;
+    background-color: #382424;
+}
+#header .wrapper,.session {
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
+}
+.header-logo {
+    width: 60px;
+    height: 60px;
+    left: 15px;
+    border-radius: 90px;
+    background-color: #d5c800;
+}
+.header-text {
+    font-size: 20px;
+    font-weight: bold;
+    left: 90px;
+    height: 30px;
+}
+.outer{
+    position: relative;
+}
+.inner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.header-btn {
+    height: 30px;
+    right: 15px;
+    padding: 10px;
+    background: #E1D8D8;
+    border-radius: 30px;
+}
+.session {
+    width: 100%;
+    height: 80vh;
+}
+.board {
+    height: 60vh;
+    min-height: 200px;
+    min-height: 200px;
+    border:2px solid #382424;
+    background-color: #E1D8D8;
+    margin: 0;
+    top: 30px;
+    overflow: scroll;
+}
+#message-create{
+    background-color: #d5c800;
+}
+.card {
+    /* color: #382424; */
+    padding: 2px;
+    border: #382424 solid;
+    margin: 10px;
+}
+.card:hover {
+    border: #fff solid;
+}
+.card p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.left {
+    left: 30px;
+    width: 30%;
+
+}
+.right {
+    right: 30px;
+    width: 50%;
+}
+.left-margin {
+    margin-left: 20px;
+}
+.board-text {
+
+}
+/* @media all and (min-width: 700px) {
+    #header .wrapper,.session {
+        display: flex;
+    }
+} */

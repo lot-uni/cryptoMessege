@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="暗号や謎解きによくあるパスワードを入れるとメッセージが出てくるみたいな事が出来るサービースです。">
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/aes.js"></script>
+  <script src="js/pbkdf2.js"></script>
+  <script type="text/javascript" src="./js/question.js?ver=1.0.0"></script>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap'); </style>
+  <link rel="stylesheet" type="text/css" href="./style/style.css?ver=1.0.0">
+  <link rel="stylesheet" type="text/css" href="./style/question.css?ver=1.0.0">
+  <link rel="icon" href="./img/main-logo.png">
+  <title>ログイン | message-rock</title>
+</head>
+<body>
+  <h1 class="title">message Rock</h1>
+  <div class="wrapper">
+    <div class="column">
+      <form  onsubmit="return false;">
+        <input type="text" name="password" id="password" placeholder=" 秘密の数字を入力"><br>
+        <p id="alert">※おっと秘密の数字が違います</p>
+        <p id="submit">開けゴマ</p>
+      </form>
+    </div>
+    <div class="column" id="left">
+      <img src="./img/main-logo.png" alt="" id="main-logo">
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p>create by lot-uni</p>
+  </footer>
+  <div id="modal-overlay"></div>
+  <div id="modal-content">
+    <p id="modal-content-text">aa48ac71a38bdb8fb53b5e9057126157,e8fcfcf7de18db8d77217013de4baa7e,/Wt+57HzHlSKH+bVRGQGAwkwbEAhtHAKs6xV3Fu0ShAEmzLkyaTuQaE7vu0fWQ/MTvBJcM3tfUo8LZEr9BM9kT0k71Pe78I1vkgVJJeMtfK6VTn2eQ5Mfw98tkzFK/iWAHW5ePlOijJb85xo0pXrZwbyHt772UCfkeanT1HfMR4bkXRr6YHMipOlHrwzXschfPlpSbeCvUxnFgEdttdqp8Q1a2b+Axebv/0S4FelYg/QRTuaWq42DOYupALJF1tzCuSastUw76tkVwZmI2Qqgw==</p>
+  </div>
+  </body>
+</html>

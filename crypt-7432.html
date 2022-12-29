@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="お正月暗号2023年版">
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/aes.js"></script>
+  <script src="js/pbkdf2.js"></script>
+  <script type="text/javascript" src="./js/question.js?ver=1.0.0"></script>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap'); </style>
+  <link rel="stylesheet" type="text/css" href="./style/style.css?ver=1.0.0">
+  <link rel="stylesheet" type="text/css" href="./style/question.css?ver=1.0.0">
+  <link rel="icon" href="./img/main-logo.png">
+  <title>beta | message-rock</title>
+</head>
+<body>
+  <h1 class="title">message Rock</h1>
+  <div class="wrapper">
+    <div class="column">
+      <form  onsubmit="return false;">
+        <input type="text" name="password" id="password" placeholder=" 秘密の数字を入力"><br>
+        <p id="alert">※おっと秘密の数字が違います</p>
+        <p id="submit">開けゴマ</p>
+      </form>
+    </div>
+    <div class="column" id="left">
+      <img src="./img/main-logo.png" alt="" id="main-logo">
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p>create by lot-uni</p>
+  </footer>
+  <div id="modal-overlay"></div>
+  <div id="modal-content">
+    <p id="modal-content-text"></p>
+    <p id="modal-content-text-crypto">bd62ac5f4f3f935f7d1303fddb0fb632,1bd635fa56f935c23fc44d7f8aa3ee4d,BP21Nl0kvRNdcFLGHWC6+lryMotZv1g0reRBJiaguzVUOFggDv55ix0NP9fpqGm121ZO+pDaE1Vop7QmUYULPgfa/ju/eJHW6ftHddq1JYOT8P/lzDBsMr9TqyQPIxIt3M6xoEffA3P/RMAE5bNuCQ==</p>
+  </div>
+  </body>
+</html>

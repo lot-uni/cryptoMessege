@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="お正月暗号2023年版">
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/aes.js"></script>
+  <script src="js/pbkdf2.js"></script>
+  <script type="text/javascript" src="./js/question.js?ver=1.0.0"></script>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap'); </style>
+  <link rel="stylesheet" type="text/css" href="./style/style.css?ver=1.0.0">
+  <link rel="stylesheet" type="text/css" href="./style/question.css?ver=1.0.0">
+  <link rel="icon" href="./img/main-logo.png">
+  <title>beta | message-rock</title>
+  <!-- その4用 -->
+</head>
+<body>
+  <h1 class="title">message Rock</h1>
+  <div class="wrapper">
+    <div class="column">
+      <form  onsubmit="return false;">
+        <input type="text" name="password" id="password" placeholder=" 秘密のことばを入力"><br>
+        <p id="alert">※おっと秘密のことばが違います</p>
+        <p id="submit">開けゴマ</p>
+      </form>
+    </div>
+    <div class="column" id="left">
+      <img src="./img/main-logo.png" alt="" id="main-logo">
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p>create by lot-uni</p>
+  </footer>
+  <div id="modal-overlay"></div>
+  <div id="modal-content">
+    <p id="modal-content-text"></p>
+    <p id="modal-content-text-crypto">36b56cc394b3a2b7c062d1b65198dc9d,149213bd33614ec5c070db95aa837c39,ZxoBOD8JuS7YbBcSozFgKPbYZFOVRluRfi0kUbgf6urT9OGlBRcutruigd3fCVeEw15uNrCEKsw2bKuKN7mVJSVgoKEHfZ3p69U07cGYXR90xA+J8h6hQTMVJqI0YzTAIK+50TmzLlwdXgRsjXwzL2qh4kr3VUwR2FOK4dQr6XRUaE/5or9L82mZDc2NA0nwQpM0zEPk64PajT3nuAlLNY4XbqNDZg1SitjVPL4R5j6bgUpyhao2e9lV9ypROWIHUxKbWVPk0Ao/NM9IxR3Rg8Ufzq4mjmhEhVsj+LOxMzvn5ZeNLTKcqJiZibPd3tDv7jIT/x7EPumbtAGv0LALAoquy/WZRjGd8NL38URNxhbjSUlxv8AwH9/KDesN+F9bWyla684z5h7djq6HX+T16suGVEKTAqTcw/oZCkjyJP7eZMLnMoR59Z/aGn2Es5HFePeEQUtz6sR7gmY9ybGn6hukqxiqXY6QzPPM2vyZyFxk5JBADBc7scJPYzcSx0AG9joMXLTyZyHhi1hVw77/RB/hYTuXGZyS2LA8WFQk306jo++UGc2+2lFW9iHnif5UYwKMjrLiYlTxFDCMO0+3+2eYOl87V3ZaDEQCP6Lsg/emsv6b6kW42Y2eWeCGeeaB</p>
+  </div>
+  </body>
+</html>
